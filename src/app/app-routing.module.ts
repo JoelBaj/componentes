@@ -21,13 +21,10 @@ const routes: Routes = [
     loadChildren: () => import('./pages/action-sheet/action-sheet.module').then(m => m.ActionSheetPageModule)
   },
   {
-    path: 'avatar',
-    loadChildren: () => import('./pages/avatar/avatar.module').then(m => m.AvatarPageModule)
+    path: 'input',
+    loadChildren: () => import('./pages/input/input.module').then( m => m.InputPageModule)
   },
-  {
-    path: 'botones',
-    loadChildren: () => import('./pages/botones/botones.module').then( m => m.BotonesPageModule)
-  },
+
 ];
 
 @NgModule({
